@@ -38,8 +38,6 @@ public class DEVICE extends TsmeMainBeanPracticeImpl implements TsmeMainBeanPrac
 	
 	private boolean visible;
 	
-	private String name;
-	
 	@Override
 	public void setId(String id) {
 		// TODO Auto-generated method stub
@@ -72,13 +70,5 @@ public class DEVICE extends TsmeMainBeanPracticeImpl implements TsmeMainBeanPrac
 
 	public String getId() {
 		return id;
-	}
-	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 }

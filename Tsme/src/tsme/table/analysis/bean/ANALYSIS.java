@@ -53,11 +53,6 @@ public class ANALYSIS extends TsmeMainBeanPracticeImpl implements TsmeMainBeanPr
 	 * 异常类型
 	 */
 	private String type;
-	
-	/**
-	 * 模板表类型：通用，特殊
-	 */
-	private String template_type;
 
 	public String getCellTemplate_id() {
 		return cellTemplate_id;
@@ -101,14 +96,6 @@ public class ANALYSIS extends TsmeMainBeanPracticeImpl implements TsmeMainBeanPr
 
 	public String getId() {
 		return id;
-	}
-
-	public String getTemplate_type() {
-		return template_type;
-	}
-
-	public void setTemplate_type(String template_type) {
-		this.template_type = template_type;
 	}
 
 	@Override
