@@ -35,6 +35,11 @@ public class TEMPLATE extends TsmeMainBeanPracticeImpl implements TsmeMainBeanPr
 	private String value;
 	
 	private String introduction;
+	
+	/**
+	 * ÐòºÅ
+	 */
+	private String serial;
 
 	@Override
 	public void setId(String id) {
@@ -140,5 +145,13 @@ public class TEMPLATE extends TsmeMainBeanPracticeImpl implements TsmeMainBeanPr
 
 	public String getId() {
 		return id;
+	}
+
+	public String getSerial() {
+		return serial;
+	}
+
+	public void setSerial(String serial) {
+		this.serial = serial;
 	}
 }
