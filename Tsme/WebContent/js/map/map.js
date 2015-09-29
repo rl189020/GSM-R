@@ -21,22 +21,22 @@ function drawStations(){
 	$("input[name=minY]").val(bounds.getSouthWest().lat);
 	$("input[name=maxX]").val(bounds.getNorthEast().lng);
 	$("input[name=maxY]").val(bounds.getNorthEast().lat);
-	alert($("input[name=minX]").val());
+	console.log($("input[name=minX]").val());
 	
 	 $.ajax({
 		 async: true,
          type: "POST",
          url: "/Tsme/map/getGeoMsg",
          data: $("#queryMsgForm").serialize(),
-         success: function (data) {
-        	 alert(1);
-             alert(result);
-           /*  var obj = eval("(" + result + ")");
+         success: function (result) {
+        	// alert(1);
+            alert(result);
+             var obj = eval("(" + result + ")");
              if (obj.code == "1001") {
                  $.cookie('token', obj.msg, { expires: 7, path: '/' });
              } else {
                  alert(obj.msg);
-             }*/
+             }
          },
          error: function () {
              alert("aaa");
