@@ -29,14 +29,12 @@ function drawStations(){
          url: "/Tsme/map/getGeoMsg",
          data: $("#queryMsgForm").serialize(),
          success: function (result) {
-        	// alert(1);
-            alert(result);
-             var obj = eval("(" + result + ")");
-             if (obj.code == "1001") {
-                 $.cookie('token', obj.msg, { expires: 7, path: '/' });
-             } else {
-                 alert(obj.msg);
-             }
+        	
+        	var arr = eval(result);
+        	for(var i=0; i<arr.length; i++){
+        		console.log(arr[i].name);
+        	}
+             
          },
          error: function () {
              alert("aaa");

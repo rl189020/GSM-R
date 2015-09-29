@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="/Tsme/css/public.css" />
 <script src="/Tsme/js/jQuery/jquery-1.7.2.js"></script>
 <script src="/Tsme/js/map/map.js"></script>
+<script>
+
+if(window != top){
+	top.location.href = location.href;
+}
+</script>
 <title>全国地图</title>
 </head>
 <body onload="loadMapJs();">
